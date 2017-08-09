@@ -50,7 +50,7 @@ Add the Service Provider:
 ```php
 'providers' => array(
     # other providers omitted
-    'Fideloper\Proxy\TrustedProxyServiceProvider',
+    Fideloper\Proxy\TrustedProxyServiceProvider::class,
 );
 ```
 
@@ -66,7 +66,7 @@ Register the HTTP Middleware in file `app/Http/Kernel.php`:
     protected $middleware = [
         // Illuminate middlewares omitted for brevity
 
-        'Fideloper\Proxy\TrustProxies',
+        Fideloper\Proxy\TrustProxies::class,
 
 ```
 
